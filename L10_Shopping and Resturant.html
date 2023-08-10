@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shops</title>
+</head>
+<style>
+  body{
+    color: blue;
+  }
+  h1 {
+      color: #8a2be2;
+    }
+    img {
+            border-color: pink;
+            border-width: 4px;
+            border-style: solid;
+            border-radius: 15px;
+    }
+  </style>
+<body>
+    <h1>Shopping Cart</h1>
+    <div><img src="c:\Users\22025267\Downloads\shopping cart.png" width="50px" alt="Check Out!" onmouseover="alert('Check Out!')"></div>
+    <p>Diary:</p>
+    <div><img src="https://img.freepik.com/free-vector/milk-bottles-packages-realistic-set-with-fruit-taste-symbols-isolated-vector-illustration_1284-80150.jpg?w=1060&t=st=1688629541~exp=1688630141~hmac=dcd1d39e8c3ab88c98cda69d1651bdebb7172d540844daafac606a9c842bcdc6" width="200px" 
+    alt="This Item cost $2.50. It also has a discount with a coupon!" onmouseover="alert('This Item cost $2.50. It also has a discount with a coupon!')"></div>
+    <button onclick="displayText()">Add Item</button>
+    <button onclick="displayText1()">Remove Item</button>
+
+    <script>
+      function displayText() {
+      alert("This Item has been added into your cart.");
+      const displayButton = document.getElementById('displayButton');
+      const displayText = document.getElementById('displayText');
+      }
+      function displayText1() {
+      alert("This Item has been removed from your cart.");
+      const displayButton = document.getElementById('displayButton');
+      const displayText = document.getElementById('displayText');
+      }
+  </script>   
+
+  <button><a href="CheckoutPage.html">Checkout</button>
+</body>
+</html>

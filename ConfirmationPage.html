@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Confirmation Page</title>
+  <meta charset="utf-8">
+  <style>
+    h1{
+      background-color:rgba(0, 0, 0, 0.349);
+    }
+    ul{
+      border-style: dashed;
+      border-color: darkgrey;
+    }
+    
+  </style>
+</head>
+<body>
+<form action="ps.html" class="confirmation-form">
+<h1>Thank You For Your Order!</h1>
+<p>Your order number is: <strong>123898</strong></p>
+<p>Your order details are:</p>
+<ul>
+  <li>Product 1: 1 x \$100</li>
+  <li>Product 2: 2 x \$50</li>
+  <li>Product 3: 3 x \$25</li>
+</ul>
+<p>Your customer information is:</p>
+<ul>
+  <li>Name: John Doe</li>
+  <li>Email: joemama@yahoo.com</li>
+  <li>Shipping Address: 777 Tuas Land, 123777</li>
+  <li>Billing Address: 408 Toa Street, 890408</li>
+</ul>
+<p>We will process your order shortly.</p>
+<p>Thank you for shopping with us!</p>
+<input type="submit" value="Back to Home">
+</form>
+<script>
+  var callFunction = reusableFunction("Infomation Received")
+  function reusableFunction(rF) {
+        alert("Infomation Received");
+        console.log(rF)
+      }
+
+</script>
+</body>
+</html>
